@@ -46,7 +46,7 @@ Foreach-Object {
     "Importing $_"
     $csvImport = Import-Csv $_.FullName -WarningAction Continue
     foreach ($line in $csvImport) {
-        if ($line.plugin -eq "20811") {
+        if ($line.plugin -eq "35730") {
             
             $hostname   = $line."NetBIOS Name"
             $repository = $line."Repository"
